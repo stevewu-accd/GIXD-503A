@@ -15,6 +15,15 @@
             background-color: rgba(100, 200, 255, 0.8);
         }
 
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 300;
+            color: #ff00ff;
+        }
+
         nav ul {
             margin-top: 0;
             margin-bottom: 0;
@@ -32,6 +41,14 @@
 
         .active {
             font-weight: bold;
+        }
+
+        .cursive {
+            font-style: italic;
+        }
+
+        #addContent {
+            color: darkolivegreen;
         }
 
         nav ul li:last-child {
@@ -62,14 +79,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li class="active"><a href="#">Work</a></li>
-                <li><a href="#">Blog</a></li>
+                <li class="cursive"><a href="#">Home</a></li>
+                <li class="active cursive"><a href="#">Work</a></li>
+                <li class="cursive"><a href="#">Blog</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <h1>Responsive Page</h1>
+        <p>This is a responsive page, try change the window size to see elements change.</p>
+        <p id="addContent">Blah blah blah</p>
+        <p>Here is another paragraph.</p>
     </main>
     <footer>
 
