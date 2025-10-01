@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color: rgb(216, 172, 27);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(216, 172, 27);
+    padding: 20px 30px;
+}
+
+header p, header h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+header button {
+    padding: 0 20px;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(231, 189, 1);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18pt;
+    font-weight: bold;
+    color: white;
+}
+
+header button:hover {
+    background-color: rgb(209, 136, 1);
+}
+
+main {
+    padding: 40px 30px;
+    background-color: rgb(228, 199, 72);
+    display: flex;
+    justify-content: center;
+}
+
+main section {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 80vh;
+    background-image: url("images/loading.png");
+    background-size: cover;
+    aspect-ratio: 5/3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: rgb(216, 172, 27);
+    padding: 10px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+}
+
+footer p {
+    margin: 10px;
+}
+
+footer a {
+    color: white;
+}
