@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+#colorStage {
+    height: 400px;
+}
+
+#bananaImage {
+    width: 60%;
+}
+
+#triggerImage {
+    width: 100px;
+}
