@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modeling Process Documentation</title>
+    <style>
+        body {
+            margin: 100px 150px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .inspiration section .card {
+            display: flex;
+            margin-top: 30px;
+            height: 300px;
+        }
+
+        .inspiration section div img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            aspect-ratio: 1 / 1;
+            margin-right: 30px;
+        }
+
+        .inspiration section div div {
+            display: block;
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Rendering Journey</h1>
+        <p>GIXD 503 | Creative Prototyping | Steve Wu</p>
+        <p>2025/10/8 Wednesday</p>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>This is a process documentation of this rendering.</p>
+            <div>
+                <img src="images/Lulu-the-Lawyer.gif" alt="Lulu the Lawyer">               
+            </div>
+            <p>The documentation includes stages from inspiration, modeling, and rendering. Have fun!</p>            
+        </section>
+        <section class="inspiration">
+            <h2>Inspiration</h2>
+            <p>First of all, the inspiration of each elements.</p>
+            <section>
+                <div class="card">
+                    <img src="https://media1.tenor.com/m/1y8zDc-ll-EAAAAd/3d-saul-saul-goodman.gif" alt="Gif of Saul Goodman">
+                    <div>
+                        <h3>The Origin</h3>
+                        <p>This Meme Gif is really funny and I want to make my own version.</p>
+                        <p>I decided to change some elements in it.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7IqPEbryXOKBl2rm0O2SbLUXvsJGxpYJtGsuF8hJ8Zdp6M7O2Dk50SWSEGhHBXW6TgNU&usqp=CAU" alt="Image of Lulu the capybabra">
+                    <div>
+                        <h3>Lulu the Capybara</h3>
+                        <p>This cute creature named Lulu is pretty popular on chinese social media.</p>
+                        <p>I want to give it a try.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.shutterstock.com/image-photo/banana-taped-white-wall-gray-600nw-2275284169.jpg" alt="a image of a taped banana" style="object-position: left;"/>          
+                    <div>
+                        <h3>The Banana</h3>
+                        <p>If you checked my previous GIXD 503 assignments. You will notice I kept elements of bananas.</p>
+                        <p>I'm continuing this fun little eastern egg.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.gq.com/photos/558288fae52bc4b477a970a9/master/w_1600%2Cc_limit/blogs-the-feed-Sauls%2520walls.jpg" alt="Saul Goodman's Office" />
+                    <div>
+                        <h3>The Office</h3>
+                        <p>The scene needs a background, Saul Goodman wouldn't bother me renting his office.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="modeling">
+            <h2>Modeling</h2>
+            <p>Now let's move to blender and start modeling.</p>
+            <h3>Modeling Lulu</h2>
+            <p>I started with Lulu's model, this little guy consists of a round head, a body, 2 arms and 2 legs. I used proportional editing to sculpture these components.</p>
+            <p>During the process, I also learned how to do mirror and subdivision modifiers to create symmatric and smooth models.</p>
+            <img src="images/Lulu-Solid.png" alt="Solid model of Lulu">
+            <p>Then, I added material to the mesh. To add details, I also learned how to do UV painting.</p>
+            <p>After unwarping the UV and paint on the eyes, pants and other details. I got Lulu in color.</p>
+            <img src="images/Lulu-colored.png" alt="color model of Lulu" />
+            <h3>Modeling the Banana</h3>
+            <p>I kept the low poly aesthetic for the banana. So it's fairly easier to make.</p>
+            <P>With a few exturde I turned a cube into a Banana. It's then placed on Lulu's head.</P>
+            <img src="images/Banana.png" alt="model of banana" />
+            <h3>The Office</h3>
+            <P>I searched on Google got a free model of Saul Goodman's office.</P>
+            <p>However it's a white model so I manually added color to each component in it.</p>
+            <img src="images/Office.png" alt="model of Saul Goodman's Office" />
+            <h3>Cameras and Lights</h3>
+            <p>Lastly, I aranged cameras and ligths round the model to achieve the effect in the Gif.</p>
+            <p>I also learned how to use make animation and got the cameras to move.</p>
+            <img src="images/Camera-moving.gif" alt="camera moving" />
+        </section>
+        <section class="Rendering">
+            <h2>Rendering</h2>
+            <p>Finally, send the scene to render queue!</p>
+            <p>I set the render to have lower resolution and frame rate to maintain the file size and the sketchy effect.</p>
+            <p>Blender then rendered a image sequence, which I uploaded to a GIF maker and turned into the GIF.</p>
+            <img src="images/Lulu-the-Lawyer.gif" alt="Lulu the Lawyer"> 
+            <p>Here are some other renderings of the scene.</p>
+            <section>
+                <img src="images/Rendering1.png" alt="a rendering of the scene" />
+                <img src="images/Rendering2.png" alt="a rendering of the scene" />
+                <img src="images/Rendering3.png" alt="a rendering of the scene" />
+            </section>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>Creating this scene was a lot of fun.</p>
+            <p>I got to learn Mirror and subdivision modifiers, UV painting and Animation in Blender.</p>
+            <p>Looking forward to exploring more features of blender!</p>
+        </section>
+    </main>
+    <footer>
+        <h2>References</h2>
+        <p>Saul Goodman Gif: <a href="https://tenor.com/view/3d-saul-saul-goodman-adamghik-gif-23876766">Link</a></p>
+        <p>Lulu the Capybara: <a href="https://www.tiktok.com/@mupxwrwvoudfemlo/video/7542401242052480286">Link</a></p>
+        <p>The Banana: <a href="https://www.patheos.com/blogs/denisonforum/2024/11/collector-spends-6-2-million-for-a-banana-taped-to-a-wall/">Link</a></p>
+        <p>Saul Goodman Office image: <a href="https://www.gq.com/story/before-better-call-saul-take-a-guided-tour-through-goodmans-breaking-bad-law-offices">Link</a></p>
+        <p>Saul Goodman Office Model: <a href="https://sketchfab.com/3d-models/saul-goodmans-office-not-mine-81b666707d434f57918ee0e41bddad9a">Link</a></p>
+    </footer>
+</body>
+</html>
