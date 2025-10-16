@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Health Redesign Pitch Scene Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <p>
+            <strong>Apple Health Redesign:</strong> 
+            Pitch Scene Documentation
+            <span>by Steve Wu | GIXD 503 Creative Prototyping</span>
+        </p>
+        <button id="topBtn"><img src="images/icons/arrow-up.svg" alt="top arrow icon"></button>
+    </nav>
+    <header>
+        <img src="images/banner.png" alt="banner image" />
+    </header>
+    <main>
+        <article>
+            <section>
+                <h1>
+                    <strong>Apple Health Redesign:</strong></br>
+                    Pitch Scene Documentation</br>
+                    <span>by Steve Wu | GIXD 503 Creative Prototyping</span>
+                </h1>
+                <video controls autoplay muted loop>
+                    <source src="images/apple health pitch.mp4" type="video/mp4">
+                </video>
+            </section>
+            
+            <section>
+                <h2>Introduction</h2>
+                <p>This short clip you are seeing is a pitch scene I made for my Apple Health redesign project. This is a 3D scene made in Blender, and I'm documenting some tools and resources I used here.</p>
+            </section>
+
+            <section>
+                <h2>Project Context</h2>
+                <p>In this project, I'm reddesigning the Apple Health app to give it a more optimized interface to better assist user collect and utilize their health data. Although I'm not working on the Apple Watch screen. It's still a significant part of the system, so I also included it in the scene.</p>
+                <p>This project is mainly focused on the software interfaces. But a rendered 3D scene could help the presentation, so I'm also using this opportunity to create 3D assests for later uses. Meanwhile, this pitch scene is for, you know, pitching the project.</p>
+                <p>Since it's an Apple app, I'm planed my scene to have an Apple vibe. There should be an iPhone, an Apple Watch, and some text to pitch the app.</p>
+            </section>
+
+            <section>
+                <h2>Scene Setup</h2>
+                <p>Before starting building anything, I decided to put in some background texture and lights for context. I used <a href="https://polyhaven.com/a/studio_small_09">this</a> HDRIs from Poly Heaven because it has a clean white background.</p>
+                <div class="in-text-image">
+                    <img src="https://cdn.polyhaven.com/asset_img/primary/studio_small_09.png?height=760&quality=95" alt="preview of the studio HDRIs" />
+                    <span>preview of the HDRIs from Poly Heaven</span>
+                </div>
+                <p>This is how it looks like in the scene.</p>
+                <div class="in-text-image">
+                    <img src="images/HDRIs preview.png" alt="preview of the studio HDRIs in scene" />
+                    <span>preview of the HDRIs in the scene, pretty bright right?</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Modeling the iPhone</h2>
+                <p>I started modeling the iPhone. One highlight during this process is the Bevel edges tool, it creates faces to round sharp edges so I could achieve the round corners of the iPhone. I used <a href="https://sketchfab.com/3d-models/apple-logo-dc39f733d8d84f5c86e4b6c1270e9c50">this</a> Apple logo model from Sketchfab.</p>
+                <div class="in-text-image">
+                    <img src="images/iphone model.png" alt="iPhone model" />
+                    <span>iPhone model!</span>
+                </div>
+                <p>I then created materials for each component on the iPhone, such as the metal frame, camera base, or the apple logo. I included a glassy like material for the camera base and it looks pretty good.</p>
+                <div class="in-text-image">
+                    <img src="images/iphone material.png" alt="iPhone model with material" />
+                    <span>iPhone model! In color!</span>
+                </div>
+                <p>Now the tricky part is the screen. Because the screen face on the model has rounded corner, it's difficult to line it up with the interface I designed and exported from Figma. So I did a work around---using a plane.</p>
+                <div class="in-text-image">
+                    <img src="images/iphone screen.png" alt="iPhone model with screen texture" />
+                    <span>Screen on iPhone</span>
+                </div>
+                <p>Great! We have an iPhone!</p>
+            </section>
+
+            <section>
+                <h2>Other Preparation for Animation</h2>
+                <p>Since the Apple Watch isn't the focus. I used <a href="https://sketchfab.com/3d-models/apple-watch-series-9-3d43ceaf6e494131997f39c1c77d8b87">this</a> Sketchfab model and added a screen using the same method.</p>
+                <div class="in-text-image">
+                    <img src="images/iphone and watch.png" alt="iPhone and Apple Watch model" />
+                    <span>iPhone and Apple Watch. Family photo!</span>
+                </div>
+                <p>Both models have several components that are grouped together in collections. In order to control the entire collection for animation. I created 2 empty axis objects and parent them to the collections. Now I can use the empty objects as controlers to move the collections around.</p>
+                <div class="in-text-image">
+                    <img src="images/parent objects.png" alt="iPhone and Apple Watch model with parent obecjts" />
+                    <span>Parented collections</span>
+                </div>
+                <p>Oh right, the camera is also placed properly facing the correct side of the background.</p>
+            </section>
+
+            <section>
+                <h2>Animation</h2>
+                <p>Lastlt, I keyframed movements of the models and made them move.</p>
+                <div class="in-text-image">
+                    <img src="images/animation.png" alt="animation frame" />
+                    <span>Flying phone and watch, woohoo</span>
+                </div>
+                <p>However, it gets boring very soon. So I tried to add a caption that shows after a few seconds.</p>
+                <div class="in-text-image">
+                    <img src="images/meet.png" alt="captions" />
+                    <span>Meet the new Apple Health</span>
+                </div>
+                <p>Now here we have the final render!</p>
+                <video controls autoplay muted loop>
+                    <source src="images/apple health pitch.mp4" type="video/mp4">
+                </video>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>I learned a couple of new tools making this scene. For example the Bevel edges tool or the Parent objects. Besides that, I could use the 3D assests for presenting my interface design in the future.</p>
+            </section>
+
+            <section>
+                <h2>References</h2>
+                <p>Small Studio HDRIs: <a href="https://polyhaven.com/a/studio_small_09">Link</a></p>
+                <p>Apple Logo Model: <a href="https://sketchfab.com/3d-models/apple-logo-dc39f733d8d84f5c86e4b6c1270e9c50">Link</a></p>
+                <p>Apple Watch Model: <a href="https://sketchfab.com/3d-models/apple-watch-series-9-3d43ceaf6e494131997f39c1c77d8b87">Link</a></p>
+                <p>Apple Watch Screen: <a href="https://support.apple.com/pa-in/guide/watch/apda88aefe4c/watchos">Link</a></p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>All rights reserved © 2025 Steve Wu</p>
+        <button id="footerBtn"><img src="images/icons/arrow-up.svg" alt="top arrow icon"></button>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
