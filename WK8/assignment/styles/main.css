@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: #F48142;
+    font-family: "Darumadrop One", sans-serif;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.document {
+    bottom: 50px;
+    left: 50px;
+}
+
+.party {
+    bottom: 50px;
+    right: 230px;
+}
+
+.refresh {
+    bottom: 50px;
+    right: 140px;
+}
+
+.pause {
+    bottom: 50px;
+    right: 50px;
+}
+
+button {
+    z-index: 1;
+    position: absolute;
+    background: none;
+    border: 0;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 50pt;
+}
+
+button:hover {
+    text-shadow: 0 0 15px white;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    font-size: 16pt;
+    
+    border-radius: 50px;
+}
+
+article div {
+    padding: 0 30px;
+    overflow: auto;
+    max-width: 800px;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}

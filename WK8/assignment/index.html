@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WK8 p5.js</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <button id="documentbtn" class="document">📋</button>
+    <button id="partybtn" class="party">😉</button>
+    <button id="refreshbtn" class="refresh">🔄️</button>
+    <button id="pausebtn" class="pause">⏸️</button>
+
+    <article class="hidden">
+      <div>
+        <h1>Documentation of Process</h1>
+        <p>I wanted to make an infinite scrolling banana animation. So I find a <a href="https://www.istockphoto.com/vector/seamless-pattern-with-silhouette-and-line-bananas-gm1479308038-507332299">reference image</a> of the banana and created the image of the banana using vertexs and bezierVertexs. Then I used loops to create arrays of bananas across the page. Using the iterator of the loops, I managed to change the coord of each bananas to make them move.</p>
+        <p>In order to make the bananas loop across the page, I had to use the "%" operation to set the coord of the bananas back to 0 when they go off the canvas. However, the animation feels sketchy if the bananas keep disappearing and pop up across the canvas. So to add a buffer to this transition, I round the width of the canvas up to a number where it can fit another column/row of the bananas. And then I set their coord back to a column/row before entering the canvas. This way you can't see the bananas teleport and it feels like there's infinite # of bananas.</p>        
+      </div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+
+    <script src="scripts/sketch.js"></script>
+    <script src="scripts/main.js"></script> 
+  </main>
+</body>
+    
+</html>
