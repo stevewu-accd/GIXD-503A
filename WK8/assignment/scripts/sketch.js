@@ -73,6 +73,10 @@ function draw() {
 }
 
 function windowResized() {
+  // Change canvas size as window resizes
+  //resizeCanvas(windowWidth, windowHeight);
+
+  // Reload window as it resizes
   window.location.reload();
 }
 
