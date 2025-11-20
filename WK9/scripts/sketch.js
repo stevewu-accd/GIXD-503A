@@ -4,16 +4,16 @@ let noiselevel, noiseScale;
 let imageScales = 0.035;
 
 function preload() {
-    banana = loadImage('../assets/banana.svg');
-    belly = loadImage('../assets/belly.svg');
-    body = loadImage('../assets/body.svg');
-    ear = loadImage('../assets/ear.svg');
-    eating = loadImage('../assets/eating.svg');
-    face = loadImage('../assets/face.svg');
-    hair = loadImage('../assets/hair.svg');
-    hands = loadImage('../assets/hands.svg');
-    happy = loadImage('../assets/happy.svg');
-    head = loadImage('../assets/head.svg');
+    banana = loadImage('assets/banana.svg');
+    belly = loadImage('assets/belly.svg');
+    body = loadImage('assets/body.svg');
+    ear = loadImage('assets/ear.svg');
+    eating = loadImage('assets/eating.svg');
+    face = loadImage('assets/face.svg');
+    hair = loadImage('assets/hair.svg');
+    hands = loadImage('assets/hands.svg');
+    happy = loadImage('assets/happy.svg');
+    head = loadImage('assets/head.svg');
 }
 
 function setup() {
