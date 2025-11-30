@@ -1,0 +1,23 @@
+.controlUI {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+}
+
+.controlUI img {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.controlUI img:hover {
+  filter: brightness(0.8);
+}
+
+.controlUI .selected {
+  background-color: #FFDD6E;
+}

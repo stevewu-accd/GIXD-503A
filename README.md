@@ -10,3 +10,4 @@ Assignment Pages:
 - <a href="https://stevewu-accd.github.io/GIXD-503A/WK6/index.html">WK6 Assignment</a>
 - <a href="https://stevewu-accd.github.io/GIXD-503A/WK8/assignment/index.html">WK8 Assignment</a>
 - <a href="https://stevewu-accd.github.io/GIXD-503A/WK9/index.html">WK9 Assignment</a>
+- <a href="https://stevewu-accd.github.io/GIXD-503A/WK10/index.html">WK10 Assignment</a>
